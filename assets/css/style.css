@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* ================== Fonts */
+
+@font-face {
+    font-family: 'sharpsans-bold';
+    src: url('../fonts/SharpSans-Bold.otf');
+}
+@font-face {
+    font-family: 'montserrat-bold';
+    src: url('../fonts/Montserrat-Bold.ttf');
+}
+@font-face {
+    font-family: 'montserrat-light';
+    src: url('../fonts/Montserrat-Light.ttf');
+}
+
+h1 {
+    font-family: sharpsans-bold;
+    font-size: 41.53px;
+}
+
+h2 , h4 , h5{
+    font-family: montserrat-bold;
+}
+h2{
+    letter-spacing: 5px;
+}
+h2, h3{
+    font-size: 22px;
+}
+h4{
+    font-size: 24px;
+}
+h2 span{
+    font-family: montserrat-light;
+    letter-spacing: 5px;
+}
+h3{
+    font-family: montserrat-light;
+    line-height: 2;
+}
+h4{
+    line-height: 2;
+}
+
+h5{
+    font-size: 18px;
+}
+h5 span{
+    font-family: montserrat-light;
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+.bg-index{
+    background-color: #402312;
+}
+.click{
+    color: #fff;
+    width: 140px;
+    height: 140px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin: 0 auto;
+    font-size: 22px;
+    text-align: center;
+
+}
+.click:hover{
+     border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.click a{
+    font-family: montserrat-light;
+    color: #fff;
+    letter-spacing: 3px;
+    position: absolute;
+    left: -14px;
+    top: -26px;
+}
+.absolute{
+    position: absolute;
+    bottom: 80px;
+    left: 0;
+}
+.fa-icons{
+    font-size: 20px;
+    font-family: montserrat-bold;
+    letter-spacing: 3px;
+}
+.nav-item a{
+    font-family: sharpsans-bold;
+    font-size: 18px;
+    color: #000;
+    letter-spacing: 1.5px;
+}
+.border-style{
+    border-radius: 15px;
+}
+.nav-link .active{
+    background-color: #22b573;
+    color: #fff;
+}
+.product-photo-circle{
+    height: 195px;
+    width: 195px;
+    background-color: #000;
+    border: 1px solid #000;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+    letter-spacing: 5px;
+    font-size: 18px;
+    font-family: montserrat-bold;
+}
+.product-photo-circle:hover{
+    transition: 1s ease;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+.product-photo{
+    position: relative;
+    top: 75px;
+}
+/* positions */
+
+.relative {
+    position: relative;
+}
+
+/* colors */
+
+.dark {
+    background-color: #e6e6e5;
+}
+.dark:hover, .darker:hover{
+    background-color: #22b573;
+    color: #fff;
+}
+.story{
+    color: #d3242e;
+}
+.darker{
+    background-color: #989898;
+}
+.check-out{
+    position: absolute;
+    bottom: -10px;
+    text-align: center;
+    left: 0;
+}
+#cart span.darker{
+    font-family: montserrat-bold;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 5px;
+}
+span.border-style{
+    border-radius: 5px;
+}
+img.cart{
+    width: 40px;
+}
+/*== products page ==*/
+#products .product-photo-circle{
+    margin: 0 auto;
+}
+#products span.darker{
+    font-family: montserrat-bold;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 6px
+}
+input::placeholder, textarea::placeholder  {
+    font-size: 15px;
+    color: #000;
+    font-family: montserrat-bold;
+}
+textarea::-webkit-input-placeholder {
+color: #000;
+}
+
+textarea:-moz-placeholder { /* Firefox 18- */
+color: #000;  
+}
+
+textarea::-moz-placeholder {  /* Firefox 19+ */
+color: #000;  
+}
+
+textarea:-ms-input-placeholder {
+color: #000;  
+}
+input.border-style, textarea.border-style  {
+    border-radius: 5px;
+    border: 1.5px solid #ddd;
+}
+.submit input{
+    font-family: montserrat-bold;
+    font-size: 17.8px;
+    color: #fff;
+    letter-spacing: 6px;
+    border: 0;
+}
+    .navbar-expand-lg .navbar-nav .nav-link {
+         padding-right: 0rem; 
+         padding-left: 0rem; 
+         letter-spacing: 0em; 
+    }
+@media (min-width:768px) and (max-width:1250px){
+    .product-photo-circle {
+        height: 165px;
+        width: 165px;
+    }
+    .product-photo {
+        position: relative;
+        top: 55px;
+        font-size: 15.1px;
+    }
+    .check{
+        width: 250px
+    }
+        .product-photo-circle{
+        margin: 0 auto;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    h4 {
+        font-size: 20.71px;
+    }
+    #products span.darker {
+        font-size: 8.8px;
+    }
+}
+@media only screen and (max-width: 990px){
+    .nav-link .dark{
+        background-color: transparent;
+    }
+    .nav-link .dark:hover{
+        border-bottom: 1px solid #000;
+        color: #000;
+        border-radius: 0 !important;
+    }
+    .nav-link .active {
+        background-color: #22b573;
+        color: #fff; 
+    }
+}
+@media only screen and (max-width: 767px) {
+    .check table{
+        width: 50%;
+        margin: 0 auto;
+    }
+    .product-photo-circle {
+        height: 165px;
+        width: 165px;
+    }
+    .product-photo {
+        position: relative;
+        top: 60px;
+        font-size: 15.1px;
+    }
+    .product-photo-circle{
+        margin: 0 auto;
+    }
+
+    h2 {
+        font-size: 22.28px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    h4 {
+        font-size: 20.71px;
+    }
+    #cart span.darker {
+        font-size: 17px;
+    }
+    .salad{
+        padding-left: 20px;
+    }
+    input::placeholder, textarea::placeholder  {
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 575px) {
+    .salad{
+        text-align: center;
+    }
+}
+/* Ripple Out */
+
+@keyframes ripple-out {
+  100% {
+    top: -15px; // set the space the border will cover
+    right: -30px;
+    bottom: -15px;
+    left: -15px;
+    opacity: 0.1; // set opacity of the border to 0
+  }
+}
+@-webkit-keyframes ripple-out { //this is for webkit
+  100% {
+    top: -15px;
+    right: -15px;
+    bottom: -15px;
+    left: -15px;
+    opacity: 0.1;
+  }
+}
+.ripple-out-a {
+ color: grey; // set the link color
+}
+.ripple-out:before {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  top: 0;
+  right: -15px;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-animation-duration: 1.5s; // set the duration of the animation
+  animation-duration: 1.5s;
+ animation-fill-mode: both; // this keep the final state of the animation
+}
+.ripple-out:hover:before, .ripple-out:focus:before, .ripple-out:active:before {
+  -webkit-animation-name: ripple-out; // call the animation
+  animation-name: ripple-out; 
+}
